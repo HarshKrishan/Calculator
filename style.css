@@ -1,0 +1,88 @@
+body {
+  background-color: orange;
+  /* text-align: center; */
+}
+.outer {
+  background-color: #ded8d8;
+  height: 300pt;
+  width: 300pt;
+  margin: auto;
+  margin-top: 100pt;
+  padding: 15px;
+  box-shadow: 5px 7px gray;
+}
+.container {
+  text-align: center;
+  
+  width: 50%;
+  margin: auto;
+}
+.buttons{
+  display: grid;
+  row-gap: 4px;
+  column-gap: 4px;
+  /* column-count: 4; */
+  /* column-gap: 5px; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button {
+  /* height: 70px; */
+  width: 100%;
+  /* display: flexbox; */
+}
+.buttons {
+  word-spacing: 18px;
+}
+.btn {
+  font-size: 3rem;
+}
+.zero{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.calculator-screen{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  height: 50px;
+  margin-bottom: 25px;
+  color: white;
+  font-size: xx-large;
+  justify-content: end;
+  overflow: hidden;
+  text-overflow: hidden;
+  white-space: nowrap;
+  background-color: black;
+}
+.eq{
+  /* height: 350px; */
+  /* grid-column: 4; */
+  /* grid-row-start:3;
+  grid-row-end: 5; */
+  /* grid-row: 3 / 5; */
+  
+  grid-area: 4 / 4 / 6/ 5;
+}
+.eq:enabled{
+  background-color: rgb(248, 185, 69);
+}
+.my-bg{
+        
+        
+        background-color: rgb(0, 0, 0);
+        filter: alpha(opacity=70);
+        -moz-opacity: 0.5;
+        -khtml-opacity: 0.5;
+        opacity: 1;
+        z-index: 1000;
+}
+.eq:hover:enabled{
+  background-color: rgb(255, 166, 0);
+}
+.eq:active:enabled{
+  background-color: rgb(248, 185, 69);
+}
+table {
+  margin: 25px;
+}
